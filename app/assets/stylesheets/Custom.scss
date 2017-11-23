@@ -2,7 +2,7 @@
 
 
 body {
-    background: #eee;
+    background: #0F056B;
     text-align: center;
     font-family: 'arial';
 
@@ -11,20 +11,32 @@ body {
 h2{
     margin-top: 40px;
     font-size: 20px;
+    color: white;
+
+}
+
+h1{
+    color: white;
+}
 
 
+h5{
+    font-size: 30px;
+    color: white;
 }
 
 #section {
     width: 90%;
     margin: 0 auto;
     padding-top: 20px;
+
 }
 
 .tabs {
     margin-top: 40px;
     padding: 0;
     margin-bottom: 8px;
+    
 }
 
 
@@ -35,9 +47,9 @@ h2{
 }
 
 a { text-decoration: none;
-    color: black;
+    color: white;
     margin-right: 10px;
-    background: #eee;
+    background: #0F056B;
     
 }
 
@@ -45,6 +57,7 @@ a { text-decoration: none;
     background: white;
     padding: 10px;
     margin: 0;
+    color: black;
 }
 
 #tabsC {
