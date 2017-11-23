@@ -3,11 +3,22 @@
 
 body {
     background: #eee;
+    text-align: center;
+    font-family: 'arial';
+
+}
+
+h2{
+    margin-top: 40px;
+    font-size: 20px;
+
+
 }
 
 #section {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .tabs {
@@ -16,18 +27,21 @@ body {
     margin-bottom: 8px;
 }
 
+
 .tabs li {
     display: inline-block;
-    background: white;
+    
     margin: 0;
 }
 
 a { text-decoration: none;
-    padding: 10px;
-    background: #222;
+    color: black;
+    margin-right: 10px;
+    background: #eee;
+    
 }
 
-.active {
+.stylecss {
     background: white;
     padding: 10px;
     margin: 0;

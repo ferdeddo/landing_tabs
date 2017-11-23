@@ -1,28 +1,31 @@
 
 $(document).ready(function() {
     $("ul.tabs").each(function() {
-        var $active, $content, $links = $(this).find('a');
-        $active = $($links.filter("[href='" + location.hash + "']")[0] || $links[0]);
-        console.log($active);
-        $active.addClass('active');
+        var $stylecss, $section, $links = $(this).find('a');
+        //'find' permet d'obtenir les descendants de chaque élément.
+        //$(this) sert à retourner un objet jQuery à partir de l'objet Javascript natif this
+        $stylecss = $($links.filter("[href='" + location.hash + "']")[0] || $links[0]);
+        console.log($stylecss);
+        $stylecss.addClass('stylecss');
 
-        $content = $($active[0].hash);
+        $section = $($stylecss[0].hash);
 
-        $links.not($active).each(function() {
+        $links.not($stylecss).each(function() {
             $(this.hash).hide();
         });
 
-        $(this).on('click', 'a', function(e) {
-            $active.removeClass('active');
-            $content.hide();
+        $(this).on('click', 'a', function(event) {
+            $stylecss.removeClass('stylecss');
+            $section.hide();
 
-            $active = $(this);
-            $content = $(this.hash);
+            $stylecss = $(this);
+            $section = $(this.hash);
 
-            $active.addClass('active');
-            $content.show();
+            $stylecss.addClass('stylecss');
+            $section.show();
 
-            e.preventDefault().alert("bon app");
+            event.preventDefault();
+            //Empecher l'action par défaut de l'événement de se déclencher.
         });
     });
 });
