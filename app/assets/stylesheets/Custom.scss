@@ -2,7 +2,7 @@
 
 
 body {
-    background: #0F056B;
+    background-image: url(galaxy.jpg);
     text-align: center;
     font-family: 'arial';
 
@@ -12,17 +12,24 @@ h2{
     margin-top: 40px;
     font-size: 20px;
     color: white;
+    text-shadow: 1px 1px red;
 
 }
 
 h1{
     color: white;
+    text-shadow: 2px 2px red;
 }
 
 
 h5{
     font-size: 30px;
     color: white;
+}
+
+h6{
+    font-size: 20px;
+    color: red;
 }
 
 #section {
@@ -36,7 +43,7 @@ h5{
     margin-top: 40px;
     padding: 0;
     margin-bottom: 8px;
-    
+
 }
 
 
@@ -48,8 +55,9 @@ h5{
 
 a { text-decoration: none;
     color: white;
-    margin-right: 10px;
-    background: #0F056B;
+    margin-right: 15px;
+    font-weight: bold;
+    
     
 }
 
@@ -58,10 +66,14 @@ a { text-decoration: none;
     padding: 10px;
     margin: 0;
     color: black;
+    border-radius: 8px 8px 8px;
+    box-shadow: 3px 3px 3px black, 6px 6px 6px black;
 }
 
 #tabsC {
     background: white;
     padding: 20px 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 6px 6px 6px black, 6px 6px 6px black;
+    border-radius: 8px 8px 8px;
+
 }
